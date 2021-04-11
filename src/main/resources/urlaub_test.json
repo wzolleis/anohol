@@ -1,0 +1,27 @@
+[
+  {
+    "application": {
+      "applicationCore": {
+        "firstDay": "2021-02-09",
+        "lastDay": "2021-02-09",
+        "workdays": 1,
+        "details": "Urlaubsantrag vom 2021-02-04",
+        "leaveType": "compensatory",
+        "id": "fca12163-f85f-4b3e-afb0-2d3a0c9461e8",
+        "created": "2021-02-04"
+      },
+      "substitute": "xxx",
+      "displayNameSubstitute": "xxx",
+      "lineManager": "yyy",
+      "displayNameLineManager": "yyy",
+      "submitter": "zzz",
+      "displayNameSubmitter": "zzz",
+      "approvedBySubstitute": true,
+      "approvedByLineManager": true,
+      "withdrawn": false
+    },
+    "forApproval": false,
+    "own": true,
+    "showLinks": true
+  }
+]
