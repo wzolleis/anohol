@@ -1,2 +1,0 @@
-# anohol
-Ano hol
