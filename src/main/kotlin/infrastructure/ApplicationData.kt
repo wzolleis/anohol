@@ -1,4 +1,4 @@
-package domain.model
+package infrastructure
 
 import kotlinx.serialization.Serializable
 
@@ -6,6 +6,6 @@ import kotlinx.serialization.Serializable
  * Wird nur zum Einlesen verwendet, da application nochmal geschachtelt in der Datenstruktur steckt
  */
 @Serializable
-class ApplicationData(val application: Application) {
+class ApplicationData(val application: ApplicationJson) {
 
 }

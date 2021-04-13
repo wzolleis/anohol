@@ -1,8 +1,12 @@
 package domain.model
 
-import kotlinx.serialization.Serializable
-
-@Serializable
-data class Application(val applicationCore: ApplicationCore) {
+data class Application(
+    val id: String,
+    val firstDay: String,
+    val lastDay: String,
+    val workdays: Int,
+    val leaveType: LeaveType,
+    val withrawn: Boolean,
+) {
 
 }

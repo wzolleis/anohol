@@ -2,6 +2,9 @@ package domain.saga
 
 import java.io.File
 
+/**
+ * Liest die Datei ein und erzeugt ein gueltiges JSon mit den Urlaubsantraegen
+ */
 class DatenEinlesenUC {
     fun start(file: File): String {
         val content = file.readText()

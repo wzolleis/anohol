@@ -1,14 +1,19 @@
 package domain.saga
 
-import domain.model.ApplicationData
-import kotlinx.serialization.decodeFromString
-import kotlinx.serialization.json.Json
+import domain.model.Application
+import infrastructure.ApplicationRepository
+import java.io.File
 
 class DatenSerialisierenUC {
-    fun start(contentAsJson: String): Array<ApplicationData> {
-        val serializer = Json {
-            ignoreUnknownKeys = true
-        }
-        return serializer.decodeFromString(contentAsJson)
+    private val repository: ApplicationRepository = ApplicationRepository()
+
+    fun deserialize(contentAsJson: String): List<Application> {
+        return repository.read(contentAsJson)
     }
+
+    fun serialize(applications: List<Application>, file: File) {
+        repository.write(applications, file)
+    }
+
+
 }
